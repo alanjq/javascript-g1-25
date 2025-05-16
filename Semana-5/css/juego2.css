@@ -1,0 +1,33 @@
+#juego2 {}
+
+#juego2 .contenedor {
+    border: 1px solid blue;
+    background-color: antiquewhite;
+}
+
+/* Jugador 1 */
+#juego2 .contenedor .j1 {
+    border: 4px solid rgba(16, 211, 68, 0.626);
+    width: 500px;
+}
+
+#juego2 .contenedor .j1 .energia {
+    width: 50%;
+    border: 1px solid blue;
+    color: white;
+    content: ' ';
+    background-color: green;
+    display: block;
+    height: 1em;
+    display: block;
+}
+
+#juego2 .contenedor .j1 .info {}
+
+#juego2 .contenedor .j1 .info .nombre {}
+
+#juego2 .contenedor .j1 .info .poder {}
+
+#juego2 .contenedor .j1 .info .vida {}
+
+#juego2 .contenedor .j1 img.personaje {}

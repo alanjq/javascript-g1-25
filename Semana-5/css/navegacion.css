@@ -1,0 +1,29 @@
+nav#navegacion {
+    padding: 1.5em 0;
+    text-align: center;
+    background-color: rgb(71, 71, 97);
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav#navegacion span {
+    margin: 1em;
+    border: 1px outset #bcbcbc;
+    border-radius: .5em;
+    padding: .5em 1em;
+}
+
+nav#navegacion span:hover {
+    background-color: beige;
+    cursor: pointer;
+    color: black;
+}
+
+section.active {
+    display: block;
+}
+
+section:not(.active) {
+    display: none;
+}

@@ -1,0 +1,20 @@
+section#tema-8 {
+    border: 3px ridge #774c4c;
+}
+
+#saludo {
+    border: blue 1px solid;
+}
+
+section#tema-8 #saludo span {
+    padding: 0.3em 0.4em;
+    border-radius: 18px;
+    background: aquamarine;
+    margin: .5em;
+    display: inline-block;
+    border: 4px solid #774c4c;
+}
+
+[hidden="yes"]{
+    display: none;
+}

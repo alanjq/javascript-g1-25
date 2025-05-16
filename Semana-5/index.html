@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo completo con interfaz</title>
+    <link href="css/navegacion.css" rel="stylesheet" type="text/css" />
+    <link href="css/tabs.css" rel="stylesheet" type="text/css" />
+    <link href="css/juego2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--
+        Módulos:
+        - pestañas
+        - piedra papel o tijera
+        - objetos
+        - tienda/blog
+     -->
+
+    <nav id="navegacion">
+        <span data-section="juego1">Piedra, Papel o Tijera</span>
+        <span data-section="juego2">Juego 2 Objetos</span>
+        <span data-section="blog">Blog</span>
+    </nav>
+
+    <main>
+        <section id="juego1">
+            <h1>Piedra papel o tijera</h1>
+
+            <!-- Piedra, papel o tijera -->
+            <label>Nombre de Jugador 1:
+                <input id="juego1_nombre_jugador1" />
+                <button type="button" id="juego1_guardarNombre">Guardar nombre</button>
+                <button type="button" id="juego1_jugar">¡Jugar!</button>
+            </label>
+            <legend>
+                <h2>Puntuación:</h2>
+                <label>Jugador 1:
+                    <input id="juego1_puntos_jugador1" readonly />
+                </label><br/>
+                <label>
+                    Jugador 2:
+                    <input id="juego1_puntos_jugador2" readonly />
+                </label>
+            </legend>
+            
+            J1: <label id="juego1_j1"></label>
+                <img class="j1" width="40" />
+            <br />
+            J2: <label id="juego1_j2"></label>
+                <img class="j2" width="40" />
+            <br />
+            Resultado: <label id="juego1_resultado"></label>
+            <!-- <button onclick="juego.imprimirResultado()">Jugar</button> -->
+        </section>
+
+        <section id="juego2" class="active">
+            <h2>Actividad</h2>
+            
+            <div class="contenedor">
+                <div class="j1">
+                    <span class="energia">100</span>
+                    <div class="info">
+                        <span class="nombre"></span>
+                        <span class="poder"></span>
+                        <span class="vida"></span>
+                    </div>
+                    <img class="personaje" />
+                    <button class="atacar" type="button">Atacar</button>
+                </div>
+                <div class="j2"></div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-content"></div>
+        </section>
+    </main>
+
+    <script src="js/app.mjs" type="module"></script>
+</body>
+
+</html>
